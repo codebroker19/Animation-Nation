@@ -1,0 +1,45 @@
+body{
+    background-color:#eff0f4;
+    --outer-shadow:3px 3px 3px #d0d0d0, -3px -3px 3px #f8f8f8;
+}
+.outer-shadow{
+    box-shadow:var(--outer-shadow);
+  }
+.home-section .home-img .img-box{
+    animation: spin 80s linear infinite;
+      max-width: 450px;
+      display: block;
+      margin: auto;
+      margin-top: 25px;
+    }
+    @keyframes spin{
+      0%{
+        transform:rotate(0deg);
+      }
+      100%{
+        transform:rotate(360deg);
+      }
+    }
+    .home-section .home-img .img-box img{
+      width: 100%;
+      border-radius: 50%;
+      border:15px solid transparent;
+    
+    }
+    
+    @media(max-width:500px)
+    {
+      .home-section .home-text,.home-section .home-img{
+        flex:0 0 100%;
+        max-width: 100%;
+      }
+      .home-section .home-text{
+        order: 2;
+        margin-top:50px;
+    text-align: center;
+      }
+    
+    }
+    
+    
+    
